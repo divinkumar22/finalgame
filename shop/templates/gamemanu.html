@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <style>
+    body { background: #eee }
+
+.container-fluid { max-width: 1200px; }
+
+header {
+	background: #563d7c;
+	padding: 2em 1em;
+	color: #fff;
+	margin-bottom: 2em;
+	h1 {
+		font-weight: 200;
+	}
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	img {
+		width: 100%;
+	}
+}
+
+[class*="row"] {
+	margin-bottom: 1em;
+  justify-content: center;
+}
+
+[class*="col-"] {
+	background: #efefef;
+	border: 1px solid #ddd;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	width: 100%;
+}
+
+     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header role="banner">
+        <h1>Game Manu</h1>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+            <div class="card">
+                {% load static %}
+              <img class="card-img-top" src="{%static 'shop/test1.jpg'%}" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">2048 Game</h4>
+                        <p class="card-text">2048 Game is  Brain Games. </p>
+                        <a  href="/2048" class="btn btn-primary">2048 Game</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="{%static 'test1.jpg'%}" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. This is a longer text to make the card longest in height for the row.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="//placehold.it/720x350" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+    <h3>
+        select Game:
+    </h3><br>
+    <h6><a href="/2048">firstgame</a></h6>
+    <h1><a href="/logout">Logout</a></h1>
+
+    
+    
+</body>
+</html>
